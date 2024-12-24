@@ -32,7 +32,7 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-24 flex justify-center items-center">
+    <section id="projects" className="py-24 flex justify-center items-center  mx-4 md:mx-0">
       <div className="container">
         <h2 className="text-3xl font-bold tracking-tighter mb-12 text-center">
           Featured Projects
