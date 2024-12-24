@@ -6,7 +6,7 @@ import Image from "next/image"
 export function HeroSection() {
   return (
     <section id="hero" className="relative min-h-[calc(100vh-4rem)] flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-background z-0" />
+      <div className="absolute inset-0  from-primary/20 to-background z-0" />
       <Container className="relative z-10 py-12 md:py-32">
         <div className="grid gap-8 lg:grid-cols-2 items-center">
           <div className="space-y-6 text-center lg:text-left max-w-2xl mx-auto lg:mx-0">

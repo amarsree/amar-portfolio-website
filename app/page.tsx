@@ -6,18 +6,21 @@ import { ContactForm } from "@/components/contact-form"
 import { Container } from "@/components/ui/container"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Mail, Phone } from 'lucide-react'
+import ParticlesBackground from "@/components/ParticlesBackground"
 
 export default function Home() {
   return (
     <>
+    <main className="relative min-h-screen">
+      <ParticlesBackground />
       <MainNav />
-      <main className="flex min-h-screen flex-col">
+       {/* <main className="flex min-h-screen flex-col">  */}
         <HeroSection />
         
-        <section id="about" className="scroll-mt-20 py-24">
-          <Container>
-            <div className="max-w-3xl mx-auto text-center space-y-6">
-              <h2 className="text-3xl font-bold tracking-tighter">About Me</h2>
+        <section id="about" className="scroll-mt-20 py-24 bg-gradient-to-br from-primary/20 to-background z-10 ">
+          <Container >
+            <div className="max-w-3xl mx-auto text-center space-y-6 ">
+              <h2 className="text-3xl font-bold tracking-tighter ">About Me</h2>
               <p className="text-lg text-muted-foreground">
                 I am a passionate Fullstack Developer and DevOps Engineer with over 4 years
                 of experience in building web applications, automating systems, and working
