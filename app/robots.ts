@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://amar-sree.com/sitemap.xml',
+    sitemap: 'https://amarsree.com/sitemap.xml',
   }
 }
