@@ -5,11 +5,19 @@ import Image from "next/image"
 
 const projects = [
   {
+    title: "Skilink - Blue Collar Job Platform",
+    description: "Platform connecting homeowners with skilled workers like plumbers, electricians etc",
+    image: "/skilink.webp", 
+    tags: ["React.js", "Django", "PostgreSQL", "Wordpress"],
+    github: "https://github.com/amar-sree/skilink",
+    demo: "https://skilink.in"
+  },
+  {
     title: "School Management System",
     description: "Comprehensive school management solution hosted on AWS",
     image: "/sms.jpeg",
     tags: ["AWS", "React", "Node.js", "MongoDB"],
-    github: "https://github.com/amar-sree/school-management",
+    github: "https://github.com/amar-sree/school-management", 
     demo: "https://school-demo.example.com"
   },
   {
@@ -86,4 +94,3 @@ export function ProjectsSection() {
     </section>
   )
 }
-

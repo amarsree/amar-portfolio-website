@@ -11,14 +11,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import { Menu } from 'lucide-react'
+import { navItems } from '@/lib/utils'
 
-const navItems = [
-  { href: "about", label: "About" },
-  { href: "experience", label: "Experience" },
-  { href: "projects", label: "Projects" },
-  { href: "skills", label: "Skills" },
-  { href: "contact", label: "Contact" },
-]
 
 export function MainNav() {
   const [isScrolled, setIsScrolled] = React.useState(false)
@@ -34,6 +28,7 @@ export function MainNav() {
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault()
+    window.history.pushState({}, '', `#${sectionId}`)
     scrollToSection(sectionId)
     setIsOpen(false)
   }
