@@ -1,9 +1,8 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { Container } from "@/components/ui/container"
-import { Github, X, Download } from 'lucide-react'
+import { Github, Download } from 'lucide-react'
 import Image from "next/image"
-import { useRouter } from 'next/navigation'
 import AnimatedTextWord from "./AnimatedTextWord"
 import TypingText from "./TypingText"
 import TextFallingAnimation from "./TextFallingAnimation"
